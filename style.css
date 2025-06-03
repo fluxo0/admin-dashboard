@@ -23,8 +23,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 1.5rem;
+    padding: 1.5rem;
     row-gap: 3rem;
+    background-color: hsl(0, 80%, 55%);
 }
 
 .main-container {
@@ -71,5 +72,10 @@ body {
 
 .main-container-right-2 {
     grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.sidebar-icons {
+    height: 1rem;
+    filter: contrast(0) brightness(100);
 }
 
