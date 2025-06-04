@@ -137,14 +137,38 @@ li > p {
     grid-template-columns: 30px 1fr;
     align-items: center;
     margin: 0 2rem;
-
 }
 
 input[type="search"] {
     border-style: none;
     background-color: var(--light-gray);
     border-radius: 12px;
-    padding: 0.3em 20em 0.3em 0;
+    padding: 0.3em 0 0.3em 1rem;
+    grid-column: 2 / span 1;
+}
+
+.profile-small-1 {
+    background: no-repeat center/100% url("/imgs/profile-1.jpg") ;
+    padding: 1.5rem;
+    border-radius: 30px;
+}
+
+.header-top-right {
+    display: grid;
+    grid-template-columns: 100px 50px 1fr;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.bell-icon {
+    height: 1.2rem;
+    margin-left: 50px;
+}
+
+.header-top-right > p {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-left: 30px;
 }
 
 
