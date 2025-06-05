@@ -27,6 +27,7 @@
     --white: #fff;
     --red: hsl(0, 80%, 55%);
     --light-gray: hsl(227, 36%, 90%);
+    --card-shadow: 0.1em 0.1em 0.4em #8d8c8c;
 }
 
 body {
@@ -59,6 +60,9 @@ body {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: repeat(2, 1fr);
+    background-color: var(--light-gray);
+    padding: 2rem 1rem;
+    column-gap: 1rem;
 }
 
 .sidebar-middle li,
@@ -78,12 +82,15 @@ body {
     grid-template-columns: 2fr 1fr;
     margin: 0 2rem;
     align-items: center;
+    margin-bottom: 0.4rem;
+    margin-top: -0.2rem;
 }
 
 .main-container-left {
     grid-area: 1 / 1 / span 2 / span 1;
     display: flex;
     flex-direction: column;
+    row-gap: 5px;
 }
 
 .projects-container {
@@ -157,7 +164,7 @@ input[type="search"] {
 
 .header-top-right {
     display: grid;
-    grid-template-columns: 100px 50px 1fr;
+    grid-template-columns: 100px 50px minmax(50px, 500px);
     align-items: center;
     margin-right: 2rem;
 }
@@ -171,6 +178,7 @@ input[type="search"] {
     font-weight: bold;
     font-size: 0.8rem;
     margin-left: 20px;
+    text-align: right;
 }
 
 .header-bottom-left {
@@ -212,6 +220,56 @@ button {
     padding: 0.5rem 1rem;
     border-radius: 20px;
 }
+
+.main-container-left > div:first-child,
+.main-container-right-1 > div:first-child,
+.main-container-right-2 > div:first-child {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.projects-cards {
+    background-color: #fff;
+    border-radius: 10px;
+    border-left: #7c98d7 solid 10px;
+    padding: 1.5rem 1rem 1rem 1rem;
+    display: grid;
+    grid-template-rows: 20px 1fr 20px;
+    box-shadow: var(--card-shadow);
+}
+
+.projects-cards .projects {
+    font-weight: bold;
+    font-size: 0.9rem;
+
+}
+
+.projects-cards p {
+    font-size: 0.8rem;
+    color: #5c5e63;
+}
+
+.projects-icons img {
+    height: 1.1rem;
+}
+
+.projects-icons {
+    justify-self: end;
+    display: flex;
+    column-gap: 20px;
+}
+
+
+
+
+
 
 
 
