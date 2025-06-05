@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Open Sans';
-    src: url('/font/OpenSans-Italic.woff2') format('woff2'),
-        url('/font/OpenSans-Italic.woff') format('woff');
+    src: url('font/OpenSans-Italic.woff2') format('woff2'),
+        url('font/OpenSans-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('/font/OpenSans-Regular.woff2') format('woff2'),
-        url('/font/OpenSans-Regular.woff') format('woff');
+    src: url('font/OpenSans-Regular.woff2') format('woff2'),
+        url('font/OpenSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -168,7 +168,7 @@ input[type="search"] {
 }
 
 .profile-small-1 {
-    background: no-repeat center/100% url("/imgs/profile-1.jpg") ;
+    background: no-repeat center/100% url("imgs/profile-1.jpg") ;
     padding: 1.5rem;
     border-radius: 30px;
     margin-left: 25px;
@@ -202,7 +202,7 @@ input[type="search"] {
 }
 
 .profile-big {
-    background: no-repeat center/100% url("/imgs/profile-1.jpg");
+    background: no-repeat center/100% url("imgs/profile-1.jpg");
     padding: 40px;
     border-radius: 50px;
 }
@@ -340,19 +340,19 @@ button {
 }
 
 .profile-small-2 {
-    background: no-repeat center/100% url("/imgs/profile-2.jpg");
+    background: no-repeat center/100% url("imgs/profile-2.jpg");
 }
 
 .profile-small-3 {
-    background: no-repeat center/100% url("/imgs/profile-1.jpg");
+    background: no-repeat center/100% url("imgs/profile-1.jpg");
 }
 
 .profile-small-4 {
-    background: no-repeat center/100% url("/imgs/profile-3.jpg");
+    background: no-repeat center/100% url("imgs/profile-3.jpg");
 }
 
 .profile-small-5 {
-    background: no-repeat center/100% url("/imgs/profile-4.jpg");
+    background: no-repeat center/100% url("imgs/profile-4.jpg");
 }
 
 
